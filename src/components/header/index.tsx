@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import Button from "../button";
 import ThemeToggle from "../theme";
 
+import {signIn, signOut} from 'next-auth/react'
+
 export default function Header() {
   const [sticky, setSticky] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
@@ -102,7 +104,7 @@ export default function Header() {
               </div>
               <div className="flex gap-4 items-center justify-end   pr-4 lg:pr-0">
                 <Button onClick={() => {}} text="create" />
-                <Button onClick={() => {}} text="Login" />
+                <Button onClick={() => {signIn}} text="Login" />
 
                 <div className="flex gap-3 items-center">
                   <ThemeToggle />
