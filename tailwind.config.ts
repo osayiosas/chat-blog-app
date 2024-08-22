@@ -22,6 +22,7 @@ module.exports = {
       "body-color": "#4B5563",
     },
     screens: {
+      
       xs: "450px",
       sm: "575px",
       md: "768px",
